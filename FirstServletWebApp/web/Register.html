@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./RegisterStyle.css" />
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>Register Form</h1>
+            <form id="myform" action="RegisterServlet" method="post">
+                <table>
+                    <tr>
+                        <td>Enter your name:</td>
+                        <td><input type="text" name="name" placeholder="Enter here"/></td>
+                    </tr>
+                    <tr>
+                        <td>Enter your username:</td>
+                        <td><input type="text" name="user_name" placeholder="Enter here"/></td>
+                    </tr>
+                    <tr>
+                        <td>Enter your password</td>
+                        <td><input type="password" name="pwd" placeholder="Enter here"/></td>
+                    </tr>
+                    <tr>
+                        <td>Select Gender:</td>
+                        <td><input type="radio" name="gender" value="male"/>Male &nbsp; &nbsp;
+                            <input type="radio" name="gender" value="female"/>Female</td>
+                    </tr>
+                    <tr>
+                        <td>Select your course</td>
+                        <td>
+                            <select name="course">
+                                <option value="network">CSE 205</option>
+                                <option value="architecture">CSE 206</option>
+                                <option value="java">CSE 456</option>
+                                <option value="security">CSE 460</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right"> <input type="checkbox" value="checked"
+                                                              name="condition"/> </td>
+                        <td>I agree terms and conditions</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="submit">Register</button>
+                            <button type="submit">Reset</button>
+                        </td>
+                    </tr>
+                </table>
+
+            </form>
+        </div>
+    </body>
+</html>

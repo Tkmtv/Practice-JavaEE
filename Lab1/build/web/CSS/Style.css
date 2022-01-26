@@ -1,0 +1,28 @@
+html {
+    font-size: 18px !important;
+}
+ul {
+    list-style-type: none;
+}
+
+img {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px
+}
+
+table td:last-of-type {
+    text-align: center !important;
+}
+
+.redBtn {
+    color: red;
+    padding: 5px;
+    border-radius: 0;
+    background: white;
+}
+
+.prompt {
+    border: 1px solid black;
+    padding: 5px;
+}
