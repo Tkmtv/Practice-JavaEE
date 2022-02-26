@@ -1,0 +1,102 @@
+html {
+    height: 100%;
+}
+body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0 50px 0;
+    display: block;
+    background-color: #fea131;
+    color: white;
+}
+
+header * {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    display: block;
+    padding: 20px 0 20px 0;
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    color: white;
+    background-color: #005b96;
+}
+
+footer * {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+}
+
+.col * {
+    padding: 10px;
+}
+
+.underLine {
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin: 10px 50px;
+    color: #005b96;
+    font-weight: bold;
+}
+
+a {
+    color: red;
+}
+
+.blueBtn {
+    color: white;
+    background-color: #005b96;
+    border-radius: 5px;
+    border: 2px solid #011f4b;
+    width: 150px;
+}
+
+.red {
+    color: red;
+    text-align: center;
+    font-size: 20px;
+}
+
+.greenBtn {
+    color: white;
+    background-color: #80b060;
+    border-radius: 5px;
+    border: 2px solid #203000;
+    width: 150px;
+}
+
+#return {
+    text-align: center;
+}
+
+.blk {
+    display: block;
+}
+
+table .leftTD {
+    text-align: left;
+}
+
+table td,
+table th {
+    text-align: center;
+}
