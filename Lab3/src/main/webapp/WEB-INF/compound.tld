@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1">
+	<tlib-version>1.0</tlib-version>
+	<short-name>lib</short-name>
+	<uri>/WEB-INF/compound</uri>
+	<tag>
+		<name>compound</name>
+		<tag-class>com.tag.TagHandler</tag-class>
+		
+		<attribute>
+			<name>finalAmount</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>initialBalance</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>interestRate</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>numberInterest</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>numberPeriods</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>
