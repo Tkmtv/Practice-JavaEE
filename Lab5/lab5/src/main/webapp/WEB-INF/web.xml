@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="WebApp_ID"
+	version="4.0">
+  <display-name>lab5</display-name>
+  
+  <welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<!-- view -->
+	<servlet>
+		<servlet-name>ViewStory</servlet-name>
+		<servlet-class>com.cse456.lab5.controller.ViewStoryController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ViewStory</servlet-name>
+		<url-pattern>/view-story</url-pattern>
+	</servlet-mapping>
+	
+	<!-- delete -->
+	<servlet>
+		<servlet-name>DelStory</servlet-name>
+		<servlet-class>com.cse456.lab5.controller.DeleteStoryController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DelStory</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	<!-- error -->
+	<error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/Error.jsp</location>
+	</error-page>
+	
+	<error-page>
+		<error-code>404</error-code>
+		<location>/Error404.jsp</location>
+	</error-page>
+</web-app>

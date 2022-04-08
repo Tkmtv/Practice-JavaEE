@@ -1,0 +1,81 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page isELIgnored="false"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@page import="com.SpringModel.*"%>
+<%@page import="java.util.*"%>    
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Assignment_7</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <style>
+            header {
+                background-color: #7952b3;
+            }
+            
+            .stIcon {
+                width: 5rem;
+                height: 5rem;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <header class="p-3 mb-3 border-bottom">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="home" class="d-flex align-items-center mb-3 mb-md-0 text-light text-decoration-none">
+                        <span class="fs-4">Story writer</span>
+                    </a>
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 ms-3">
+                        <li><a href="home" class="nav-link px-2 link-light">Home</a></li>
+                        <li><a href="add_story" class="nav-link px-2 link-light">Add story</a></li>
+                        <li><a href="show_stories" class="nav-link px-2 link-light link-secondary">Show stories</a></li>
+                    </ul>
+
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                    </form>
+                    <button type="submit" class="btn btn-outline-light">Search</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container-lg p-3">
+                <div class="border p-4 h-100">
+                <h2 class="text-uppercase">All Stories:</h2>
+                    <div class="row">
+                        <div class="col-12">
+                            <c:forEach var="st" items="${stories}">
+                                <div class="card mt-3">
+                                    <div class="card-body px-5">
+                                        <img src="https://png.pngtree.com/png-vector/20190214/ourlarge/pngtree-vector-notes-icon-png-image_509622.jpg" class="stIcon"/>
+                                        <h5 class="card-title">${st.title}</h5>
+                                        <p class="card-text">${st.content}</p>
+                                        <p class="card-text">
+                                            <a href="delete_story?id=${st.id}" class="btn btn-danger">Delete</a>
+                                            <a href="update?id=${st.id}" class="btn btn-primary">Update</a>
+                                        </p>
+                                        <p class="card-text text-info">Last updated on ${st.date}</p>
+                                    </div>
+                                </div>
+                            </c:forEach>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
+
+</html>

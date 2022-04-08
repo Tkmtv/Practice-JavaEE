@@ -1,0 +1,34 @@
+body {
+	background-color: #ff5733;
+}
+
+.banner {
+	margin: 20px; 
+	font-size: 50px; 
+	color: yellow;
+	font-style: italic;
+}
+
+.cmb {
+	background-color: white;
+}
+
+.cmbName {
+	border: none;
+	background-color: white;
+}
+
+.card {
+	width: 100%;
+	height: 15rem;
+}
+
+.itemImg {
+	width: 100%;
+	height: 5rem;
+}
+
+.submitBtn {
+	width: 20rem !important;
+	position: fixed;
+}
